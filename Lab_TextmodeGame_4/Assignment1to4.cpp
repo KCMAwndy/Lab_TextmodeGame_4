@@ -163,6 +163,9 @@ int main()
 						x = posx;
 						y = posy;
 					}
+					else if (eventBuffer[i].Event.MouseEvent.dwButtonState & FROM_LEFT_1ST_BUTTON_PRESSED) {
+						color = rand() % 256;
+					}
 				}
 			}
 			delete[] eventBuffer;
